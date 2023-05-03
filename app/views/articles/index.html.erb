@@ -1,0 +1,14 @@
+<h1>Hello Rails!</h1>
+<p>hehehe foda pra carai</p>
+
+<hr/>
+
+<ul>
+    
+    <% @articles.each do |article| %>
+        <a href="/articles/<%= article.id %>">
+            <strong><%= article.title %></strong>
+        </a>
+    <% end %>
+    
+</ul>
